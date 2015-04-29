@@ -1,4 +1,5 @@
 var i;
+var gameArray = [];
 
 var apikey = '10d0a85137d94904c75e456dcdf91468227c09ca'; // Put your API key here
 // Use this function to do stuff with your results.
@@ -7,7 +8,10 @@ var apikey = '10d0a85137d94904c75e456dcdf91468227c09ca'; // Put your API key her
 
 function searchCallback(results) {
     for(i=0; i < 8; i++) {
-        console.log(results[i]);
+        //get results, add to array j(push?)
+        gameArray.push(results[i].name, results[i].image.thumb_url, results[i].deck, results[i].platforms.name);
+        //console.log(results[i]);
+        console.log(gameArray);
     }
 
 }
