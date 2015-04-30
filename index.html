@@ -6,9 +6,9 @@
     <title></title>
 
     <meta name="description" content="Webpage">
-    <meta name-"author" content="">
+    <meta name="author" content="">
 
-    <link rel"stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link href="stylesheet.css" rel="stylesheet">
 </head>
 
@@ -17,19 +17,21 @@
     <h1>Search GiantBomb for Your Favorite Games</h1>
 </div>
 
-<div class="container">
+<div class="container well">
     <div class="col-md-2">
         <input type="text" class="searchField"><br>
         <div class="searchButton">Search for Games!</div>
     </div>
+
+
+    <div class="col-md-10 col-offset-1 well displayGames"></div>
+</div>
+<div class="container">
     <div class="nav">
         <button class="left btn-large"></button>
         <button class="right btn-large"></button>
     </div>
-
-    <div class="col-md-10 col-offset-1 displayGames"></div>
 </div>
-
 
 <script src="jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
